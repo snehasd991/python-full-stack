@@ -120,7 +120,9 @@ class Card(payment):
     def pay(self, amount):
         print(f"Paid {amount} using Card")
 
-p1 = UPI()
-p2 = Card()
-p1.pay(1000)
-p2.pay(2000)
+    p1 = UPI()
+    p2 = Card()
+    p1.pay(1000)
+    p2.pay(2000)
+
+new_func(UPI, Card)
