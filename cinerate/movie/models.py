@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.db import models
 
 # Create your models here.
@@ -17,9 +18,8 @@ class movie(models.Model):
         total = sum(review.rating for review in reviews)
         return round(total / reviews.count(), 1)
 
-    
-    from django.db import models
-from django.conf import settings
+
+Movie = movie
 
 RATING_CHOICES = [
     (1, '1 Star'),

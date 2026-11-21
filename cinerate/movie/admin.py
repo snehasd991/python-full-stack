@@ -1,8 +1,8 @@
 from django.contrib import admin
-from .models import movie, Review
+from .models import Movie, Review
 
 
-@admin.register(movie)
+@admin.register(Movie)
 class MovieAdmin(admin.ModelAdmin):
     list_display = ('title', 'release_date', 'genre')
     search_fields = ('title',)
